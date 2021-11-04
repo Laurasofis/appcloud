@@ -24,11 +24,11 @@ if (count($cursor->toArray())>0){
 $tb=$client->Lluvia->precipitacion;
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>'2018']],
-                ['ESTACION'=>['$eq'=>'zipaquira']]
+                ['ANNO'=>['$eq'=>'1997']],
+                ['ESTACION'=>['$eq'=>'Sutatausa']]
             ]
         ];
-//$query = new MongoDB\Driver\Query($filter);
+$query = new MongoDB\Driver\Query($filter);
 $rows = $tb->find($filter);
 $datos= iterator_to_array($rows);
 echo json_encode($datos);
