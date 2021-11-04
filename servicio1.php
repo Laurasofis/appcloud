@@ -24,8 +24,8 @@ if (count($cursor->toArray())>0){
 $tb=$client->Lluvia->Precipitacion;
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>'1997']],
-                ['ESTACION'=>['$eq'=>'Sutatausa']]
+                ['ANNO'=>['$eq'=>'2018']],
+                ['ESTACION'=>['$eq'=>'zipaquira']]
             ]
         ];
 //$query = new MongoDB\Driver\Query($filter);
