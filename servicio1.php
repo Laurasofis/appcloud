@@ -21,7 +21,7 @@ if (count($cursor->toArray())>0){
     echo "No";
 }*/
 
-$tb=$client->Lluvia->Precipitacion;
+$tb=$client->Lluvia->precipitacion;
 $filter= ['$and'=>
             [
                 ['ANNO'=>['$eq'=>'2018']],
