@@ -21,11 +21,12 @@ if (count($cursor->toArray())>0){
     echo "No";
 }*/
 
-$tb=$client->Lluvia->precipitacion;
+$tb=$client->Trafico->vehiculo;
 $filter= ['$and'=>
             [
-                ['ANNO'=>['$eq'=>'1997']],
-                ['ESTACION'=>['$eq'=>'Sutatausa']]
+                ['IdPeaje'=>['$eq'=>'10']],
+                ['CategoriaTarifa'=>['$eq'=>'I']],
+                ['Desde'=>['$eq'=>'01/01/2019 12:00:00 AM']]
             ]
         ];
 $query = new MongoDB\Driver\Query($filter);
