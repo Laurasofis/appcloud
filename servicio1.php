@@ -25,8 +25,8 @@ $tb=$client->Trafico->vehiculo;
 $filter= ['$and'=>
             [
                 ['IdPeaje'=>['$eq'=>'10']],
-                ['CategoriaTarifa'=>['$eq'=>'I']],
-                ['Desde'=>['$eq'=>'01/01/2019 12:00:00 AM']]
+                ['CategoriaTarifa'=>['$eq'=>'I']]
+                //['Desde'=>['$eq'=>'01/01/2019 12:00:00 AM']]
             ]
         ];
 $query = new MongoDB\Driver\Query($filter);
